@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    min-height: 100%;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-size: 26px;
+    top: 0;
+    left: 0;
+    background-color: #211E73;
+    color: #fff;
+    z-index: 2;
+    padding-left: 50%;
+}
+
+/* Photos scroll */
+.photos {
+    display: grid;
+    grid-template-rows: minmax(auto 120px);
+    height: 100%;
+    z-index: 3;
+    width: 120px;
+    margin: 0 auto;
+    color: #000;
+    overflow-x: hidden;
+    background-color: #211E73;
+}
+
+.photos img {
+    height: 150px;
+    width: 100%;
+}
+
+.photos div img:hover {
+    border: 1px solid #000;
+}
+/* end Photos scroll */
+
+/* Scroll perzonalizado */
+.photos::-webkit-scrollbar {
+    width: 7px;
+}
+
+.photos::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #45BF28);
+    border-radius: 5px;
+}
+
+.photos::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #1B83C3);
+    border-radius: 5px;
+}
+/* end Scroll perzonalizado */
+
+.table-container {
+    width: 100%;
+    grid-template-rows: auto;
+}
+
+.lista {
+    background-color: #fff;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.lista__roja {
+    background: #E3D2DA;
+}
+
+.total-list {
+    margin-top: 40px;
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container table tr:nth-child(odd) {
+    background-color: #E8F3F9;
+}
+
+.table-container table th {
+    background-color: #E8F3F9;
+}
+
+.table-container table th,
+.table-container table td {
+    padding: 15px 0.6rem;
+    text-align: left;
+    font-size: 14px;
+}
+
+.table-container table tr:hover {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #211E73;
+    transition: all 500ms ease;
+}
+
+i {
+    font-size: 20px;
+}
+
+i:hover {
+    color: #45BF28;
+    -webkit-filter: drop-shadow(0px 0px 5px #666);
+	filter: drop-shadow(0px 0px 5px #666);
+    transition:all  .8s  ease;
+}
