@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles-dist.css">
+    <script src="https://kit.fontawesome.com/55f90cd05f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <title>Ingreso SFIS</title>
+</head>
+<body>
+    <!-- Header - Menu -->
+    <header class="header">
+        <div class="header-content">
+            <nav class="nav">
+                <div class="logo-nav">
+                    <a href="#">
+                        <img src="./img/Logo-SFIS.png" alt="Logo SIFS">
+                    </a>
+                </div>
+
+                <ul class="cont-ul">
+                    <li class="usuarios">USUARIOS
+                        <ul class="ul-first">
+                            <li class="">
+                                <a href="#">Perfiles</a>
+                            </li>
+                            <li>
+                                <a href="#">Funciones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="configuracion">CONFIGURACIÓN
+                        <ul class="ul-second">
+                            <li class="">
+                                <a href="#">Zonas</a>
+                            </li>
+                            <li>
+                                <a href="#">Camaras</a>
+                            </li>
+                            <li>
+                                <a href="#">Rutas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="registros">REGISTROS
+                        <ul class="ul-third">
+                            <li>
+                                <a href="#">Visitantes</a>
+                            </li>
+                            <li>
+                                <a href="#">Ingresos</a>
+                            </li>
+                            <li>
+                                <a href="#">Actividad</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>PARÁMETROS</li>
+
+                    <li><a href="#">
+                        <i class="fas fa-search"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!-- end Header - Menu -->
+
+    <!-- banner -->
+    <section class="main__slider">
+        <div class="container__slider">
+            <div class="box__slider">
+                <h1>Ingreso de Visitantes</h1>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+
+    <!-- card ingreso -->
+    <main>
+        <section class="card__box">
+            <form>
+                <div class="field custom-select">
+                    <label>Tipo de identificación</label>
+                    <select>
+                        <option selected disabled>Seleccione un valor</option>
+                        <option value="">CC</option>
+                        <option value="">CE</option>
+                        <option value="">TI</option>
+                        <option value="">Pasaporte</option>
+                        <option value="">Carné Diplomatico</option>
+                        <option value="">Salvoconducto</option>
+                        <option value="">Permanencia Especial</option>
+                    </select>
+                    <span class="custom-arrow"></span>
+                </div>
+                <div class="field">
+                    <label>Número de identificación</label>
+                    <input type="text" name="identificacion" required value="" autocomplete="">
+                </div>
+                <div class="field">
+                    <label>Nombres y apellidos completos</label>
+                    <input type="text" name="nombres" required autocomplete="">
+                </div>
+                <div class="field">
+                    <label>Empresa</label>
+                    <input type="text" name="empresa" required autocomplete="">
+                </div>
+                <div class="field">
+                    <label>Correo electrónico</label>
+                    <input type="email" name="email" required autocomplete="">
+                </div>
+                <div class="field">
+                    <label>Número de contacto</label>
+                    <input type="tel" name="telefono" required autocomplete="">
+                </div>
+                <div class="field custom-select">
+                    <label>Origen</label>
+                    <select>
+                        <option selected disabled>Seleccione un valor</option>
+                        <option value="">{{zona[1]}}</option>
+                    </select>
+                    <span class="custom-arrow"></span>
+                </div>
+                <div class="field custom-select">
+                    <label>Destino</label>
+                    <select>
+                        <option selected disabled>Seleccione un valor</option>
+                        <option value="">{{zona[1]}}</option>
+                    </select>
+                    <span class="custom-arrow"></span>
+                </div>
+                <div class="field">
+                    <label>Contacto destino</label>
+                    <input type="text" name="empresa" required autocomplete="">
+                </div>
+                <div class="field">
+                    <label>Motivo</label>
+                    <input type="text" name="empresa" required autocomplete="">
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- end card ingreso -->
+    <!-- Registro imagenes -->
+    <h2 class="title__register">Registro de imágenes</h1>
+
+    <section class="container__card">
+        <!-- card 1 -->
+        <div class="card">
+            <img src="./img/hombre.jpg" alt="">
+            <h4>Imagen frontal</h4>
+            <p>Ubiquese de manera frontal en la camara</p>
+            <button class="btn-grape">Capturar</button>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card">
+            <img src="./img/hombre.jpg" alt="">
+            <h4>Imagen lateral 1</h4>
+            <p>Ubiquese de manera lateral del lado izquierdo</p>
+            <button class="btn-grape">Capturar</button>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card">
+            <img src="./img/hombre.jpg" alt="">
+            <h4>Imagen lateral 2</h4>
+            <p>Ubiquese de manera lateral de lado derecho</p>
+            <button class="btn-grape">Capturar</button>
+        </div>
+
+        <input type="submit" value="Ingresar" class="button">
+    </section>
+    <!-- end Registro imagenes -->
+
+    <footer class="footer">
+        <div class="container__footer">
+            <p>Spectra Ingeniería - Todos los derechos reservados 2021</p>
+        </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+</body>
+</html>
