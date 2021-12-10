@@ -17,7 +17,8 @@ body{
     margin: 0;
     background: url(../img/bg-SFIS-1920x1400.jpg) no-repeat center top;
     font-family: var(--font-primary);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -438,7 +439,7 @@ select {
 .footer {
     padding: 1em 0;
     text-align: center;
-    margin-top: 50px;
+    margin-top: auto;
     color: var(--white);
 }
 .scrol {
