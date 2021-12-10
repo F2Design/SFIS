@@ -1,3 +1,13 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --color-grape: #731E46;
+    --color-blue: #211E73;
+    --color-green: #45BF28;
+    --color-grey: #bbb;
+    --font-primary: 'Titillium Web', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,102 +16,75 @@
 }
 
 body {
-    background: #fff;
+    margin: 0;
     font-family: 'Titillium Web', sans-serif;
     background-size: 100vw 100vh;
+    background: url(../img/bg-SFIS-1920x1080.jpg) no-repeat center top;
 }
 
-body, .modal {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.modal__ppal {
+    margin-top: 25px;
 }
 
-.title {
+.titulo__actividad {
     font-size: 20px;
     padding: 0;
     margin-left: 15px;
     font-weight: 700;
 }
 
-.title2 {
+.titulo-desconocido {
     font-size: 20px;
     padding: 0;
     margin-left: 25px;
     font-weight: 700;
-    color: #731E46;
+    color: var(--color-grape);
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#btn-modal:checked ~ .modal {
-    opacity: 1;
-    visibility: visible;
-}
-
-.contenedor {
+.contenedor-modal {
     width: 800px;
+    margin-top: 50px;
     margin: auto;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
-    transition: all 500ms ease;
-    position: relative;
-    transform: translateY(-30%);
     border-radius: 1em;
 }
 
-#btn-modal:checked ~ .modal .contenedor {
-    transform: translateY(0%);
-}
-
-.contenedor header {
+.contenedor-modal header {
+    display: flex;
     padding: 10px;
-    background: #731E46;
-    color: #fff;
+    background: var(--color-grape);
+    color: var(--white);
+    justify-content: space-between;
     border-radius: 1em 1em 0 0;
 }
 
-.contenedor label {
+.contenedor-modal label {
     display: flex;
-    top: 10px;
+    top: 100px;
     margin-right: 5px;
     border-radius: 50px;
     justify-content: center;
     align-items: center;
     width: 30px;
     height: 30px;
-    position: absolute;
     right: 10px;
-    color: #fff;
+    color: var(--white);
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
     background: rgba(250, 249, 249, 0.1);
 }
 
-#btn-modal {
-    display: none;
-}
-
 .lbl-modal {
-    background: #000;
-    color: #fff;
+    background: var(--black);
+    color: var(--white);
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.modal__picture {
+.modal__imagen {
     width: 100%;
     margin: 0 auto;
     max-width: 750px;
@@ -126,15 +109,6 @@ body, .modal {
     border-radius: 10px;
 }
 
-.table1__item {
-    background: #E8F3F9;
-    border-radius: 10px;
-    padding-left: 10px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-
 /* card 2 */
 .container__desconocido {
     margin: 25px;
@@ -146,6 +120,7 @@ body, .modal {
     position: relative;
     display: flex;
     width: 100%;
+    margin-bottom: 25px;
 }
 
 .section-one img {
@@ -160,7 +135,8 @@ body, .modal {
     padding-left: 10px;
     align-items: flex-end;
     display: grid;
-    background: #E8F3F9;
+    color: var(--white);
+    background: rgba(115, 30, 70, 1);
     border-radius: 10px 10px 0 0;
     font-weight: 600;
 }
@@ -179,11 +155,17 @@ body, .modal {
 }
 
 .section-three div {
+    border-bottom: 1px solid var(--black);
+    width: 130px;
+}
+
+.section-three div {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .item__5 {
+    color: var(--color-grape);
     background: #D5BCC8;
     padding-left: 10px;
     margin-left: -10px;
@@ -192,10 +174,4 @@ body, .modal {
     border-radius: 0 0 10px 10px;
 }
 
-.item__10 {
-    padding-left: 10px;
-    margin-left: -10px;
-    padding-top: 4px;
-    height: 30px;
-}
 /* end card 2 */
