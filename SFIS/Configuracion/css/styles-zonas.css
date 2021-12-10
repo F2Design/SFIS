@@ -440,6 +440,10 @@ td {
         transform: translateX(-71px);
         padding-top: 15px;
     }
+
+    .footer {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 1440px) {
