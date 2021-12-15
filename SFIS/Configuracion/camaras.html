@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles-camaras-dist.css">
+    <script src="https://kit.fontawesome.com/55f90cd05f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <title>Camaras</title>
+</head>
+<body>
+    <!-- Header - Menu -->
+    <header class="header">
+        <div class="header-content">
+            <nav class="nav">
+                <div class="logo-nav">
+                    <a href="#">
+                        <img src="./img/Logo-SFIS.png" alt="Logo SIFS">
+                    </a>
+                </div>
+
+                <ul class="cont-ul">
+                    <li class="usuarios">USUARIOS
+                        <ul class="ul-first">
+                            <li class="">
+                                <a href="#">Perfiles</a>
+                            </li>
+                            <li>
+                                <a href="#">Funciones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="configuracion">CONFIGURACIÓN
+                        <ul class="ul-second">
+                            <li class="">
+                                <a href="#">Zonas</a>
+                            </li>
+                            <li>
+                                <a href="#">Camaras</a>
+                            </li>
+                            <li>
+                                <a href="#">Rutas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="registros">REGISTROS
+                        <ul class="ul-third">
+                            <li>
+                                <a href="#">Visitantes</a>
+                            </li>
+                            <li>
+                                <a href="#">Ingresos</a>
+                            </li>
+                            <li>
+                                <a href="#">Actividad</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>PARÁMETROS</li>
+
+                    <li><a href="#">
+                        <i class="fas fa-search"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!-- end Header - Menu -->
+
+    <!-- banner -->
+    <section class="main__slider">
+        <div class="container__slider">
+            <div class="box__slider">
+                <h1>Configuración - Camaras</h1>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+
+    <main>
+        <!-- Formulario -->
+        <section class="card__box">
+            <form>
+                <div class="field">
+                    <button class="btn-grape"><a href="#">Crear cámara</a></button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Tabla -->
+
+        <section class="container">
+            <div class="lbl-menu">
+                <table cellspacing="0">
+                    <label for="radio1">Datos generales</label>
+                    <label for="radio2">Servicios</label>
+                </table>
+            </div>
+
+            <div class="content">
+
+                <!-- Tabla 1 -->
+                <input type="radio" name="radio" id="radio1" checked>
+                <div class="tab1">
+
+                        <table class="table-fill">
+                            <!-- tr es fila #1 -->
+                            <thead>
+                                <tr>
+                                    <!-- th encabezados -->
+                                    <th>Nombre</th>
+                                    <th>Referencia</th>
+                                    <th>Marca</th>
+                                    <th>Fps</th>
+                                    <th>IP</th>
+                                    <th>Zona</th>
+                                    <th>Puerto</th>
+                                    <th>Link</th>
+                                    <th>Usuario</th>
+                                    <th>Password</th>
+                                    <th>UUID</th>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td>Recepción piso 1</td>
+                                    <td>IPC-HDBW1200E</td>
+                                    <td>10</td>
+                                    <td>192.16812.74</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td class="puerto">rtsp://admin:5p3ctr418@192.168.12.74:554/cam/realmonitor?chanel=1&subtype=1&unicast=true&proto=Onvif</td>
+                                    <td>admin</td>
+                                    <td>5p3ctr418</td>
+                                    <td>none</td>
+                                    <td>none</td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td>Recepción piso 1</td>
+                                    <td>IPC-HDBW1200E</td>
+                                    <td>10</td>
+                                    <td>192.16812.74</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>rtsp://admin:5p3ctr418@192.168.12.74:554/cam/realmonitor?chanel=1&subtype=1&unicast=true&proto=Onvif</td>
+                                    <td>admin</td>
+                                    <td>5p3ctr418</td>
+                                    <td>none</td>
+                                    <td>none</td>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td>P3-Pasillo Gerencias</td>
+                                    <td>IPC-HDBW1200E</td>
+                                    <td>10</td>
+                                    <td>192.16812.74</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>rtsp://admin:5p3ctr418@192.168.12.74:554/cam/realmonitor?chanel=1&subtype=1&unicast=true&proto=Onvif</td>
+                                    <td>admin</td>
+                                    <td>5p3ctr418</td>
+                                    <td>7VCpBS5pu</td>
+                                    <td>7VCpBS5pu</td>
+                                </tr>
+                                <!-- row 5 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td>Recepción piso 1</td>
+                                    <td>IPC-HDBW1200E</td>
+                                    <td>10</td>
+                                    <td>192.16812.74</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>rtsp://admin:5p3ctr418@192.168.12.74:554/cam/realmonitor?chanel=1&subtype=1&unicast=true&proto=Onvif</td>
+                                    <td>admin</td>
+                                    <td>5p3ctr418</td>
+                                    <td>none</td>
+                                    <td>none</td>
+                                </tr>
+                                <!-- row 6 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td>P3-Pasillo Gerencias</td>
+                                    <td>IPC-HDBW1200E</td>
+                                    <td>10</td>
+                                    <td>192.16812.74</td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                    <td>rtsp://admin:5p3ctr418@192.168.12.74:554/cam/realmonitor?chanel=1&subtype=1&unicast=true&proto=Onvif</td>
+                                    <td>admin</td>
+                                    <td>5p3ctr418</td>
+                                    <td>7VCpBS5pu</td>
+                                    <td>7VCpBS5pu</td>
+                                </tr>
+                            </thead>
+                        </table>
+
+                </div>
+                <!-- end Tabla 1 -->
+
+                <!-- Tabla 2 -->
+                <input type="radio" name="radio" id="radio2">
+                <div class="tab2">
+                    <section class="contenedor__botones">
+                        <button class="btn btn-blue">Server ML</button>
+                        <button class="btn btn-brown">Iniciar Server</button>
+                        <button class="btn btn-purple">Parar Server</button>
+                    </section>
+
+                    <section class="contenedor2__ppal">
+
+                        <table class="contenedor2__datos" cellspacing="0">
+                            <!-- tr es fila #1 -->
+                            <thead class="box__contenedor2">
+                                <tr>
+                                    <!-- th encabezados -->
+                                    <th colspan="5" class="encabezado__tabla2">Nombre</th>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Recepción piso 1</td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-toggle-on fas-grape"></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-power-off fas-grape"></i></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <button class="btn-contenedor2 btn-yellow">Test</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn-contenedor2 btn-blue2">Streaming</button>
+                                    </td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Avda 8N Cll 25</td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-toggle-on fas-grape"></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-power-off fas-grape"></i></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <button class="btn-contenedor2 btn-yellow">Test</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn-contenedor2 btn-blue2">Streaming</button>
+                                    </td>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Parqueadero Avda 8N</td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-toggle-on fas-grape"></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-power-off fas-grape"></i></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <button class="btn-contenedor2 btn-yellow">Test</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn-contenedor2 btn-blue2">Streaming</button>
+                                    </td>
+                                </tr>
+                                <!-- row 5 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">P2-Escaleras</td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-toggle-on fas-grape"></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-power-off fas-grape"></i></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <button class="btn-contenedor2 btn-yellow">Test</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn-contenedor2 btn-blue2">Streaming</button>
+                                    </td>
+                                </tr>
+                                <!-- row 6 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">P3-Pasillo Gerencias</td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-toggle-on fas-grape"></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-power-off fas-grape"></i></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <button class="btn-contenedor2 btn-yellow">Test</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn-contenedor2 btn-blue2">Streaming</button>
+                                    </td>
+                                </tr>
+                                <!-- row 7 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">ALBEIRO WEBCAM</td>
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-toggle-on fas-grape"></i></a>
+                                    </td >
+                                    <td class="primercol">
+                                        <a href="#"><i class="fas fa-power-off fas-grape"></i></i></a>
+                                    </td>
+                                    <td class="primercol">
+                                        <button class="btn-contenedor2 btn-yellow">Test</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn-contenedor2 btn-blue2">Streaming</button>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+
+                        <table class="contenedor3__datos" cellspacing="0">
+                            <!-- tr es fila #1 -->
+                            <thead class="box__contenedor3">
+                                <tr>
+                                    <!-- th encabezados -->
+                                    <th class="encabezado__tabla3">Parámetro</th>
+                                    <th class="encabezado2__tabla3">Valor</th>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Time ml</td>
+                                    <td class="field"><input type="text" name="nombres" required autocomplete=""></td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Ángulo horizontal</td>
+                                    <td class="field"><input type="text" name="nombres" required autocomplete=""></td>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Ángulo vertical</td>
+                                    <td class="field"><input type="text" name="nombres" required autocomplete=""></td>
+                                </tr>
+                                <!-- row 5 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Sizeface</td>
+                                    <td class="field"><input type="text" name="nombres" required autocomplete=""></td>
+                                </tr>
+                                <!-- row 6 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Thr</td>
+                                    <td class="field"><input type="text" name="nombres" required autocomplete=""></td>
+                                </tr>
+                                <!-- row 7 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Thr person</td>
+                                    <td class="field"><input type="text" name="nombres" required autocomplete=""></td>
+                                </tr>
+                                <!-- row 8 -->
+                                <tr>
+                                    <!-- td col -->
+                                    <td class="primercol">Thr min person</td>
+                                    <td class="field"><input type="text" name="nombres" required autocomplete=""></td>
+                                </tr>
+                            </thead>
+                        </table>
+
+                    </section>
+
+                </div>
+                <!-- end Tabla 2 -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Spectra Ingeniería - Todos los derechos reservados 2021</p>
+    </footer>
+    <!-- end Footer -->
+    <script src="./js/menu.js"></script>
+</body>
+</html>
+
+
